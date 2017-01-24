@@ -11,8 +11,7 @@ namespace rockpaperscissors
 
         public override void chooseName()
         {
-
-
+            name = ("Computer");
         }
 
         public override void ThrowSign()
