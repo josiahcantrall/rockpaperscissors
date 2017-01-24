@@ -8,6 +8,13 @@ namespace rockpaperscissors
 {
     public class Computer : Player
     {
+
+        public override void chooseName()
+        {
+
+
+        }
+
         public override void ThrowSign()
         {
             Random random = new Random();
