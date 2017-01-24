@@ -20,14 +20,7 @@ namespace rockpaperscissors
             TrackGamesWon();
             Console.ReadKey();
 
-
-
-            //    case "2 Player":
-            //        Console.WriteLine("Player One you play first. Please enter Rock, Paper, Scissors, Lizard, Spock ");
-            //        answer = Console.ReadLine().ToLower();
-                        Console.WriteLine("Player One you play first. Please enter Rock, Paper, Scissors, Lizard, Spock ");
-            //        answer = Console.ReadLine().ToLower();
-            //        
+    
         }
         public void PlayOneRound ()
         {
@@ -83,10 +76,10 @@ namespace rockpaperscissors
             switch (playerWhoWon)
             {
                 case 1:
-                    Console.WriteLine("Congrats. Player One has won this round!");
+                    Console.WriteLine("Congrats. " + playerOne.name + " has won this round!");
                     break;
                 case 2:
-                    Console.WriteLine("Congrats. Player Two has won this round!");
+                    Console.WriteLine("Congrats. " + playerTwo.name + " has won this round!");
                     break;
                 case 3:
                     Console.WriteLine("Nice try, but it's a tie!");
@@ -107,11 +100,11 @@ namespace rockpaperscissors
         {
             if (playerOne.gamesWon == 2)
             {
-                Console.WriteLine("Congrats. Player One has won this entire game!");
+                Console.WriteLine("Congrats. " + playerOne.name + " has won this entire game!");
             }
             else if (playerTwo.gamesWon == 2)
             {
-                Console.WriteLine("Congrats. Player Two has won this entire game!");
+                Console.WriteLine("Congrats. " + playerTwo.name + " has won this entire game!");
             }
 
         }
